@@ -1,0 +1,101 @@
+.h1{
+    font-size : 20px;
+}
+.dog_name{
+    font-size : 32px;
+}
+.dog_detail {
+    font-size: 16px;
+}
+body {
+    background-color: #FFDBFF;
+    align-items: center;
+    margin:0;
+}
+.header{
+    text-align:center;
+    font-size:22px;
+    font-weight:bold;
+    margin-top:30px;
+}
+.infobox{
+    width:600px;
+    margin:20px auto;
+    padding:25px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+input, select{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    margin-bottom:15px;
+    border-radius:6px;
+    border:1px solid #ccc;
+    box-sizing:border-box;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    width:auto;
+    margin-right:5px;
+}
+.centerbox{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+    margin-top:10px;
+}
+
+.dog_profile{
+    display: inline-block;
+    align-items: center;
+    width : 250px;
+    height: 400px;
+    border : 2px solid black;
+    margin-left : 20px;
+    padding : 10px;
+    margin-bottom: 50px;
+}
+.dog_image{
+    width: 200px;
+    height: 150px;
+    align-items: center;
+    object-fit: cover;
+    padding: 20px;
+   
+}
+.dog_name {
+    font-size: 20px;
+    font-weight: bold;
+}
+.adoptButton{
+    padding:10px 20px;
+    background:#4CAF50;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+
+}
+.adoptButton:hover{
+    background-color:#45a049;
+}
+.name {
+    text-align: center;
+    font-size: 16px;
+}
+.dog_desciption{
+    text-align: left;
+    font-size: 16px;
+}
+.description{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+.center {
+    display: flex;
+    justify-content: center;  /* horizontal center */
+    align-items: center;      /* vertical center (optional) */
+}
