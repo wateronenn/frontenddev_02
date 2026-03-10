@@ -2,52 +2,51 @@
 <html>
 <head>
     <link rel = "stylesheet" href = "css/style.css">
+    
     <title>Adopt ME !</title>
 </head>
 <body class="body">
     <p class = "header"> ข้อมูลส่วนตัวผู้อุปการะ </p>
-    <div class="infobox">
-       <form>
-        <input type = "text" id = "firstName" name = "firstName" placeholder="ชื่อผู้อุปการะ" size ="25">
-        <input type = "text" id = "lastName" name = "lastName" placeholder="นามสกุลผู้อุปการะ" size ="25">
-        <input type = "text" id = "Telephone" name = "Telephone" placeholder="เบอร์โทรศัพท์ที่ติดต่อได้" size ="10">
-        <input type = text id = "email" name = "email" placeholder="อีเมล์ที่ติดต่อได้" size = 50>
-    </form> 
-    </div>
-    
-    <p class = "header"> ข้อมูลสิ่งแวดล้อมการอุปการะ </p>
-    <div class = "infobox">
-        <form>
-        <input type = "text" id = "address" name = "address" placeholder="ที่อยู่" size ="100">
-        <label for = "addressType">ลักษณะที่พักอาศัย : <br></label>
-        <select id = "addressType" , name="addressType" size = "3">
-            <option value = "บ้านสวน">บ้านสวน</option>
-            <option value = "บ้านเดี่ยว">บ้านเดี่ยว</option>
-            <option value = "บ้านทาวน์โฮม">บ้านทาวน์โฮม</option>
-            <option value = "คอนโดมิเนียม/หอพัก">คอนโดมิเนียม/หอพัก</option>
-            
-
-        </select>
-        <input type = "number" id = "amount" name = "amount" placeholder="จำนวนสัตว์เลี้ยงที่มีอยู่ปัจจุบัน" size ="2">
-        <input type = "radio" id = "inside" name = "place" value="inside" checked>
-        <label for="inside">เลี้ยงสุนัขภายในบ้าน</label>
-        <input type = "radio" id = "outside" name = "place" value="outside" >
-        <label for="outside">เลี้ยงสุนัขภายนอกบ้าน</label> 
-       
-    
-        <p class = description>การส่งแบบฟอร์มนี้เป็นการแจ้งความสนใจ โดยไม่รับรองการได้รับอุปการะสุนัข 
-            ทางเราจะมีการติดต่อกลับไปยังช่องทางที่ท่านได้ระบุไว้หากดำเนินการสำเร็จ </p>
-        <div class="centerbox">
-           <input type = "checkbox" id = "agree" name = "agree" value="agree" checked> 
-            <label for="agree">Agree</label> 
+    <form id = "adoptForm">
+        <div class="infobox">
+            <input type = "text" id = "firstName" name = "firstName" placeholder="ชื่อผู้อุปการะ" size ="25">
+            <input type = "text" id = "lastName" name = "lastName" placeholder="นามสกุลผู้อุปการะ" size ="25">
+            <input type = "text" id = "Telephone" name = "Telephone" placeholder="เบอร์โทรศัพท์ที่ติดต่อได้" size ="10">
+            <input type = text id = "email" name = "email" placeholder="อีเมล์ที่ติดต่อได้" size = 50>
         </div>
+    
+        <p class = "header"> ข้อมูลสิ่งแวดล้อมการอุปการะ </p>
+        <div class = "infobox">
+            <input type = "text" id = "address" name = "address" placeholder="ที่อยู่" size ="100">
+            <label for = "addressType">ลักษณะที่พักอาศัย : <br></label>
+            <select id = "addressType" , name="addressType" size = "3">
+                <option value = "บ้านสวน">บ้านสวน</option>
+                <option value = "บ้านเดี่ยว">บ้านเดี่ยว</option>
+                <option value = "บ้านทาวน์โฮม">บ้านทาวน์โฮม</option>
+                <option value = "คอนโดมิเนียม/หอพัก">คอนโดมิเนียม/หอพัก</option>
+            </select>
+            <input type = "number" id = "amount" name = "amount" placeholder="จำนวนสัตว์เลี้ยงที่มีอยู่ปัจจุบัน" size ="2">
+            <input type = "radio" id = "inside" name = "place" value="เลี้ยงสุนัขภายในบ้าน" checked>
+            <label for="inside">เลี้ยงสุนัขภายในบ้าน</label>
+            <input type = "radio" id = "outside" name = "place" value="เลี้ยงสุนัขภายนอกบ้าน" >
+            <label for="outside">เลี้ยงสุนัขภายนอกบ้าน</label> 
         
-    </form>
+            <p class = description>การส่งแบบฟอร์มนี้เป็นการแจ้งความสนใจ โดยไม่รับรองการได้รับอุปการะสุนัข 
+                ทางเราจะมีการติดต่อกลับไปยังช่องทางที่ท่านได้ระบุไว้หากดำเนินการสำเร็จ </p>
+            <div class="centerbox">
+            <input type = "checkbox" id = "agree" name = "agree" value="agree" checked> 
+                <label for="agree">Agree</label> 
+            </div>
+            <div class="center">
+                <button type = submit class ="submitButton" id="submitButton" disabled> submit </button>
+            </div>
 
-    </div>
-    <div class="center">
-        <button class ="adoptButton"> submit </button>
-    </div>
+        </div>
+    </form> 
+   
+   
+
   <p class="name"> 6833290021 Abhabhichaya Brahmahitadara</p>
+  <script src = "adoptme.js"></script>
 </body>
 </html>
